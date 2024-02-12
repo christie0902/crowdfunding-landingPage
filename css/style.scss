@@ -1,0 +1,123 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+$primary-color-moderate: hsl(176, 50%, 47%);
+$primary-color-dark: hsl(176, 72%, 28%);
+$neutral-color-black: hsl(0, 0%, 0%);
+$neutral-dark-gray: hsl(0, 0%, 48%);
+$light-gray:rgb(248, 244, 244);
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body {
+    background-color:$light-gray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url('../images/image-hero-desktop.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 4rem;
+    padding-inline: 10em;
+    
+    & img {
+        width: 200px;
+        object-fit: contain;
+    }
+
+    & .nav-links {
+       display: flex;
+       justify-content: space-between;
+       & a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-inline: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    }
+}
+
+.header {
+    display: flex;
+    width: 50vw;
+    height: 35vh;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    background-color: white;
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    & .logo-icon {
+        position: relative;
+        bottom: 3vh;
+    }
+    & h1 {
+        font-size: 1.5em;
+    }
+    & p {
+        margin-block: 1.2em;
+        color: $neutral-dark-gray;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        min-width: 95%;
+        padding-inline: 2.5em;
+        padding-top: 2em;
+        & button {
+            width: 12em;
+            height: 3.5em;
+            border-radius: 35px;
+            background-color: $primary-color-dark;
+            color: white;
+            font-size: 1em;
+            font-weight: 400;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 2em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        & .header__bookmark {
+            display: flex;
+            width: 12em;
+            background-color: $light-gray;
+            border-radius: 35px;
+            & svg {
+                & circle {
+                    fill: $primary-color-dark;
+                }
+                & path {
+                    fill: white;
+                }
+            }
+            & p {
+                color: $primary-color-dark;
+                font-weight: bold;
+                padding-inline: 1em;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
