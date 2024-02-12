@@ -59,9 +59,8 @@ body {
     align-items: center;
     margin-inline: auto;
     background-color: white;
-    position: absolute;
-    top: 30vh;
-    left: 25vw;
+    position: relative;
+    top: -10vh;
     & .logo-icon {
         position: relative;
         bottom: 3vh;
